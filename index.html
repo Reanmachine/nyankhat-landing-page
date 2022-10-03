@@ -11,7 +11,6 @@
         content="NyanKhat Creations, NyanKhat, 3D Printing, Miniatures, Miniature Painting, Etsy, Discord">
     <meta name="author" content="NyanKhat Creations">
 
-    <script src="https://kit.fontawesome.com/4ba2e184a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 </head>
 
@@ -39,7 +38,7 @@
                         viewBox="0 0 20 20">
                         <path
                             d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
-                    </svg> 3D Printing Services, Miniature Painting
+                    </svg> 3D Printing Services
                 </p>
 
                 <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg
@@ -54,7 +53,7 @@
                 </p>
 
                 <div class="pt-12 pb-8">
-                    <a href="https://www.etsy.com/ca/messages/new?with_id=19461521&referring_id=7316762&referring_type=shop&recipient_id=19461521"
+                    <a href="mailto:Nyankhatcreations@gmail.com"
                         class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
                         Get In Touch
                     </a>
@@ -82,50 +81,10 @@
         <!--Img Col-->
         <div class="w-full lg:w-2/5">
             <!-- Big profile image for side bar (desktop) -->
-            <img src="./model.webp" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-        </div>
-
-
-        <!-- Pin to top right corner -->
-        <div class="absolute top-0 right-0 h-12 w-18 p-4">
-            <button class="js-change-theme focus:outline-none">🌙</button>
+            <img src="./model.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
         </div>
 
     </div>
-
-    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@4"></script>
-    <script>
-        //Init tooltips
-        tippy('.link', {
-            placement: 'bottom'
-        })
-
-        //Toggle mode
-        const toggle = document.querySelector('.js-change-theme');
-        const body = document.querySelector('body');
-        const profile = document.getElementById('profile');
-
-
-        toggle.addEventListener('click', () => {
-
-            if (body.classList.contains('text-gray-900')) {
-                toggle.innerHTML = "☀️";
-                body.classList.remove('text-gray-900');
-                body.classList.add('text-gray-100');
-                profile.classList.remove('bg-white');
-                profile.classList.add('bg-gray-900');
-            } else {
-                toggle.innerHTML = "🌙";
-                body.classList.remove('text-gray-100');
-                body.classList.add('text-gray-900');
-                profile.classList.remove('bg-gray-900');
-                profile.classList.add('bg-white');
-
-            }
-        });
-
-    </script>
 
 </body>
 
